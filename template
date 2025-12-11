@@ -1,0 +1,139 @@
+#Code for templates to add a delta entity ie the difference between low and high cell voltage in a battery
+#usually added to a template config in your HA
+
+
+    #House Pylontech Batteries - Getting Cell Deviation
+    # Battery 1
+    - name: "Battery1 Cell Imbalance"
+      unique_id: "Battery1_Delta"
+      unit_of_measurement: "V"
+      state: >
+        {{ (states('sensor.pylontech_monitor_battery1_highest_cell_voltage') | float(0) - 
+            states('sensor.pylontech_monitor_battery1_lowest_cell_voltage') | float(0)) | round(3) }}
+      icon: "mdi:battery-alert"
+
+    # Battery 2
+    - name: "Battery2 Cell Imbalance"
+      unique_id: "Battery2_Delta"
+      unit_of_measurement: "V"
+      state: >
+        {{ (states('sensor.pylontech_monitor_battery2_highest_cell_voltage') | float(0) - 
+            states('sensor.pylontech_monitor_battery2_lowest_cell_voltage') | float(0)) | round(3) }}
+      icon: "mdi:battery-alert"
+
+    # Battery 3
+    - name: "Battery3 Cell Imbalance"
+      unique_id: "Battery3_Delta"
+      unit_of_measurement: "V"
+      state: >
+        {{ (states('sensor.pylontech_monitor_battery3_highest_cell_voltage') | float(0) - 
+            states('sensor.pylontech_monitor_battery3_lowest_cell_voltage') | float(0)) | round(3) }}
+      icon: "mdi:battery-alert"
+
+    # Battery 4
+    - name: "Battery4 Cell Imbalance"
+      unique_id: "Battery4_Delta"
+      unit_of_measurement: "V"
+      state: >
+        {{ (states('sensor.pylontech_monitor_battery4_highest_cell_voltage') | float(0) - 
+            states('sensor.pylontech_monitor_battery4_lowest_cell_voltage') | float(0)) | round(3) }}
+      icon: "mdi:battery-alert"
+
+    # Battery 5
+    - name: "Battery5 Cell Imbalance"
+      unique_id: "Battery5_Delta"
+      unit_of_measurement: "V"
+      state: >
+        {{ (states('sensor.pylontech_monitor_battery5_highest_cell_voltage') | float(0) - 
+            states('sensor.pylontech_monitor_battery5_lowest_cell_voltage') | float(0)) | round(3) }}
+      icon: "mdi:battery-alert"
+
+    # Battery 6
+    - name: "Battery6 Cell Imbalance"
+      unique_id: "Battery6_Delta"
+      unit_of_measurement: "V"
+      state: >
+        {{ (states('sensor.pylontech_monitor_battery6_highest_cell_voltage') | float(0) - 
+            states('sensor.pylontech_monitor_battery6_lowest_cell_voltage') | float(0)) | round(3) }}
+      icon: "mdi:battery-alert"
+
+    # Battery 7
+    - name: "Battery7 Cell Imbalance"
+      unique_id: "Battery7_Delta"
+      unit_of_measurement: "V"
+      state: >
+        {{ (states('sensor.pylontech_monitor_battery7_highest_cell_voltage') | float(0) - 
+            states('sensor.pylontech_monitor_battery7_lowest_cell_voltage') | float(0)) | round(3) }}
+      icon: "mdi:battery-alert"
+
+    # Battery 8
+    - name: "Battery8 Cell Imbalance"
+      unique_id: "Battery8_Delta"
+      unit_of_measurement: "V"
+      state: >
+        {{ (states('sensor.pylontech_monitor_battery8_highest_cell_voltage') | float(0) - 
+            states('sensor.pylontech_monitor_battery8_lowest_cell_voltage') | float(0)) | round(3) }}
+      icon: "mdi:battery-alert"
+
+    # Battery 9
+    - name: "Battery9 Cell Imbalance"
+      unique_id: "Battery9_Delta"
+      unit_of_measurement: "V"
+      state: >
+        {{ (states('sensor.pylontech_monitor_battery9_highest_cell_voltage') | float(0) - 
+            states('sensor.pylontech_monitor_battery9_lowest_cell_voltage') | float(0)) | round(3) }}
+      icon: "mdi:battery-alert"
+
+    # Battery 10
+    - name: "Battery10 Cell Imbalance"
+      unique_id: "Battery10_Delta"
+      unit_of_measurement: "V"
+      state: >
+        {{ (states('sensor.pylontech_monitor_battery10_highest_cell_voltage') | float(0) - 
+            states('sensor.pylontech_monitor_battery10_lowest_cell_voltage') | float(0)) | round(3) }}
+      icon: "mdi:battery-alert"
+
+    # Battery 11
+    - name: "Battery11 Cell Imbalance"
+      unique_id: "Battery11_Delta"
+      unit_of_measurement: "V"
+      state: >
+        {{ (states('sensor.pylontech_monitor_battery11_highest_cell_voltage') | float(0) - 
+            states('sensor.pylontech_monitor_battery11_lowest_cell_voltage') | float(0)) | round(3) }}
+      icon: "mdi:battery-alert"
+
+    # Battery 12
+    - name: "Battery12 Cell Imbalance"
+      unique_id: "Battery12_Delta"
+      unit_of_measurement: "V"
+      state: >
+        {{ (states('sensor.pylontech_monitor_battery12_highest_cell_voltage') | float(0) - 
+            states('sensor.pylontech_monitor_battery12_lowest_cell_voltage') | float(0)) | round(3) }}
+      icon: "mdi:battery-alert"
+
+    # Battery 13
+    - name: "Battery13 Cell Imbalance"
+      unique_id: "Battery13_Delta"
+      unit_of_measurement: "V"
+      state: >
+        {{ (states('sensor.pylontech_monitor_battery13_highest_cell_voltage') | float(0) - 
+            states('sensor.pylontech_monitor_battery13_lowest_cell_voltage') | float(0)) | round(3) }}
+      icon: "mdi:battery-alert"
+
+    # Battery 14
+    - name: "Battery14 Cell Imbalance"
+      unique_id: "Battery14_Delta"
+      unit_of_measurement: "V"
+      state: >
+        {{ (states('sensor.pylontech_monitor_battery14_highest_cell_voltage') | float(0) - 
+            states('sensor.pylontech_monitor_battery14_lowest_cell_voltage') | float(0)) | round(3) }}
+      icon: "mdi:battery-alert"
+
+    # Battery 15
+    - name: "Battery15 Cell Imbalance"
+      unique_id: "Battery15_Delta"
+      unit_of_measurement: "V"
+      state: >
+        {{ (states('sensor.pylontech_monitor_battery15_highest_cell_voltage') | float(0) - 
+            states('sensor.pylontech_monitor_battery15_lowest_cell_voltage') | float(0)) | round(3) }}
+      icon: "mdi:battery-alert"
