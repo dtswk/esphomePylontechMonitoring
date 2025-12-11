@@ -1,17 +1,18 @@
 # esphomePylontechMonitoring
+
 Sharing my working code based on a M5Stack AtomS3 Lite with the Atom RS232 base 
 
 I wanted something simple and compact rather than solding up my own, it's my first time using the M5Stack and I liked it.  Clip together and good to go..!
 
 What I hated was the doco wasn't very helpful and often misleading, hopefully this will save other people the hours I wasted.
 
-Learnings
-Ignore the writing on the RS232 base the GPIO is as per my code
-The RX and TX from the base I think is flipped it references the device, either way copy my photo it works  :-)
-I was overrunning the uart buffer as my newer batteries can be a longer string up to 16.  I've made the buffer larger to resolve that
-The cable to you make from the RS232 device to the pylontech I think needs to be relatively short, mine was originally 3 metres so I could stay near easy power, lots of errors, made that shorter ie 30cm and used an long USB cable problem resolved.
+**Learnings**
+* Ignore the writing on the RS232 base the GPIO is as per my code
+* The RX and TX from the base I think is flipped it references the device, either way copy my photo it works  :-)
+* I was overrunning the uart buffer as my newer batteries can be a longer string up to 16.  I've made the buffer larger to resolve that issue.  Default is 1500 I've set to 2048 increase if you have a larger battery system
+* The cable to you make from the RS232 device to the pylontech I think needs to be relatively short, mine was originally 3 metres so I could stay near easy power, lots of errors, made that shorter ie 30cm and used an long USB cable problem resolved.
 
-I take measures every 600s ie 10 minutes, so it will take awhile for the first reading, if you want an immediate one use either the devices webserver or in HA click the button to get an immediate reading.
+I take measures every 600s ie 10 minutes, so it will take awhile for the first reading, if you want an immediate one use either the devices webserver or in HA click the button to get an immediate reading.  Also feel free to modify the code.
 
 https://docs.m5stack.com/en/core/AtomS3%20Lite
 https://docs.m5stack.com/en/atom/atomic232
