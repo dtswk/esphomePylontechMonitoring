@@ -24,6 +24,4 @@ Note:  I have wired the RJ45 to 568B and therefore is Pin 3 white / green, Pin 6
 
 <img width="557" height="849" alt="image" src="https://github.com/user-attachments/assets/f435d31a-0984-460a-b4c7-1ef67029b607" />
 
-<img width="525" height="1075" alt="image" src="https://github.com/user-attachments/assets/ac4a19ec-edc3-4843-993f-58e1dc01b80a" />
-
-<img width="525" height="1137" alt="image" src="https://github.com/user-attachments/assets/7891b1ea-cdee-4f65-8d11-5bef7e62d87b" />
+<img width="706" height="1166" alt="image" src="https://github.com/user-attachments/assets/fde3e9cb-5642-4909-bed2-7c5065a9be67" />
