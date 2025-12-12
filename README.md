@@ -8,7 +8,7 @@ What I hated was the doco wasn't very helpful and often misleading, hopefully th
 
 **Learnings**
 * Ignore the writing on the RS232 base the GPIO is as per my code
-* The RX and TX from the base I think is flipped it references the device, either way copy my photo it works  :-)
+* The RX and TX from the base I think is flipped it references the device, either way copy my photo it works  :-)   
 * I was overrunning the uart buffer as my newer batteries can be a longer string up to 16.  I've made the buffer larger to resolve that issue.  Default is 1500 I've set to 2048 increase if you have a larger battery system
 * The cable to you make from the RS232 device to the pylontech I think needs to be relatively short, mine was originally 3 metres so I could stay near easy power, lots of errors, made that shorter ie 30cm and used an long USB cable problem resolved.
 
@@ -19,6 +19,8 @@ https://docs.m5stack.com/en/atom/atomic232
 
 References
 https://esphome.io/components/pylontech/
+
+Note:  I have wired the RJ45 to 568B and therefore is Pin 3 white / green, Pin 6 is Green, Pin 8 Brown.  ESPHOME doco says white/green is RX and Green is TX, you will see that is opposite based on the R and T with the R5Stack...
 
 <img width="557" height="849" alt="image" src="https://github.com/user-attachments/assets/f435d31a-0984-460a-b4c7-1ef67029b607" />
 
